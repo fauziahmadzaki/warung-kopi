@@ -1,0 +1,641 @@
+body{
+    padding: 0;
+    margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+background-color: rgb(31, 17, 2);
+  color: white;
+  scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+#home{
+    min-height: 100vh;
+    background-image: url("public/main-kopi.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    
+}
+nav{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: all 2s;
+    background-color: rgb(0,0,0, 0.5);
+}
+nav .logo h1{
+    font-family: "Leckerli One", cursive;
+    font-size: 28px;
+    color: burlywood;
+      text-shadow:
+    -1px -1px 0 rgb(31, 17, 2),
+     1px -1px 0 rgb(31, 17, 2),
+    -1px  1px 0 rgb(31, 17, 2),
+     1px  1px 0 rgb(31, 17, 2);
+}
+nav .hamburger-menu{
+    display: none;
+}
+nav .hamburger-menu i{
+    font-size: 32px;
+      text-shadow:
+    -1px -1px 0 rgb(31, 17, 2),
+     1px -1px 0 rgb(31, 17, 2),
+    -1px  1px 0 rgb(31, 17, 2),
+     1px  1px 0 rgb(31, 17, 2);
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: bold;
+    color:burlywood;
+
+
+}
+
+main .tittle h1{
+    font-size: 52px;
+    font-family: "Rubik";
+    color: rgb(250, 237, 220);
+    line-height: 60px;
+    width: 60%;
+    margin: 0;
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+main .tittle p{
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+    font-size: 25px;
+    width: 40%;;
+    margin-top: -5px;
+
+}
+
+main button{
+    display: block;
+    width: 12rem;
+    padding: 15px;
+    color: black;
+    background-color: burlywood;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+
+}
+
+#about{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+
+
+}
+#about h1{
+    font-size: 30px;
+    color: rgb(250, 237, 220);
+}
+#about img{
+    border: solid 5px rgb(250, 237, 220);
+    border-radius: 10px;
+}
+#about p{
+    text-indent: 20px;
+    text-align: justify;
+    max-width: 80%;
+    font-size: 20px;
+
+}
+#about .quotes{
+    text-indent: 0;
+    font-style: italic;
+}
+#about h5{
+    font-family: "Leckerli One";
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#product{
+    min-height: 100vh;
+    background-color: rgb(250, 237, 220);
+    color: rgb(31, 17, 2);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#product h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+#product .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#product .product-container .card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: solid 2px burlywood;
+    height: 400px;
+    gap: 10px;
+}
+#product .product-container .card h1{
+    margin: 0;
+    font-family: "Rubik";
+    font-size: 24px;
+}
+#product .product-container .card p{
+    font-size: 20px;
+    display: block;
+    margin: 0;
+}
+#product .product-container .card h4{
+    padding: 10px 30px;
+    background-color: rgb(31, 17, 2);
+    color: rgb(250, 237, 220);
+    align-self: baseline;
+    margin: 0;
+}
+#product .product-container .card img{
+    border-radius: 10px;
+    border: solid 3px rgb(31, 17, 2);
+}
+
+.hidden{
+    display: none;
+}
+.navbar-down{
+    top: 0;
+    transition: all 0.7s;
+}
+
+#contact{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: burlywood;
+    color: rgb(31, 17, 2);
+    padding: 20px 30px;
+    border-radius: 15px;
+    gap: 10px;
+
+    
+}
+#contact *{
+    margin: 0;
+}
+#contact form label{
+    font-size: 20px;
+    align-self: baseline;
+    font-weight: 500;
+}
+#contact form input{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(250, 237, 220, 1);
+    border: solid 2px rgb(31, 17, 2);
+}
+#contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(250, 237, 220, 1);
+    height: 100px;
+    border: solid 2px rgb(31, 17, 2);
+}
+#contact form button{
+    background-color: rgb(31, 17, 2);
+    color: rgb(250, 237, 220);
+    width: 100%;
+    border-radius: 0;
+}
+
+footer{
+    background-color: rgb(22, 22, 22);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer *{
+    margin: 0;
+}
+footer h1{
+    font-weight: lighter;
+}
+footer p{
+    width: 80%;
+    text-align: center;
+
+}
+footer .sosmed{
+    display: flex;
+    gap: 15px
+}
+footer .sosmed a{
+    font-size: 40px;
+}
+footer .copyright{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+
+
+@media (max-width: 600px){
+    main #home{
+        background-image: url("public/mobile-kopi.jpeg");
+        background-position: -20vh;
+        display: flex;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        gap: 150px;
+        padding: 0 20px;
+
+    }
+    nav{
+        padding: 0 20px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    nav .navbar{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        height: 50vh;
+        background-color: rgb(250, 237, 220, 1);
+        transition: all 0.7s;
+        padding: 80px;
+        box-sizing: border-box;
+        border-bottom: solid 10px rgb(31, 17, 2);
+    }
+    nav .navbar ul{
+        margin-left: -40px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar ul li a{
+        color: rgb(31, 17, 2);
+        font-size: 28px;
+    }
+    nav .hamburger-menu{
+        display: flex;
+        z-index: 999;
+
+    }
+    nav .hamburger-menu i{
+        color: burlywood;
+
+    }
+    nav .hamburger-menu i#nav-open{
+        display: flex;
+        transition: all 0.7s;
+    }
+    nav .hamburger-menu i#nav-close{
+        display: none;
+        font-size: 30px;
+        color:rgb(31, 17, 2);
+        transition: all 0.7s;
+    }
+    nav .hamburger-menu i#nav-open.hidden{
+    display: none;
+    }
+        nav .navbar.navbar-down{
+            top: 0;
+            transition: all 0.7s;
+        }
+    nav .hamburger-menu i#nav-close.show{
+        display: flex;
+        transition: all 0.7s;
+
+    } 
+main .tittle h1{
+    font-size: 40px;
+    font-family: "Rubik";
+    color: rgb(250, 237, 220);
+    line-height: 5vh;
+    margin: 0;
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+main .tittle p{
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+    font-size: 20px;
+    width: 100%;
+    text-indent: 20px;
+    
+}
+
+main button{
+    display: block;
+    width: 12rem;
+    padding: 15px;
+    color: rgb(31, 17, 2);
+    background-color: burlywood;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+
+}
+nav.hidden{
+    display: none;
+    transition: all 0.7s;
+}
+
+#about{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+
+
+}
+#about h1{
+    font-size: 30px;
+    color: rgb(250, 237, 220);
+}
+#about img{
+    border: solid 5px rgb(250, 237, 220);
+    border-radius: 10px;
+}
+#about p{
+    font-size: 16px;
+    width: 100%;
+    text-indent: 15px;
+    text-align: justify;
+}
+#about .quotes{
+    font-style: italic;
+}
+#about h5{
+    font-family: "Leckerli One";
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.hidden{
+    display: none;
+}
+.navbar-down{
+    top: 0;
+    transition: all 0.7s;
+}
+
+#product{
+    min-height: 100vh;
+    background-color: rgb(250, 237, 220);
+    color: rgb(31, 17, 2);
+    padding: 30px;
+    box-sizing: border-box;
+}
+#product h1{
+    text-align: center;
+    font-size: 30px;
+}
+#product .product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#product .product-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: solid 2px burlywood;
+    height: 400px;
+    gap: 10px;
+}
+#product .product-container .card h1{
+    margin: 0;
+    font-family: "Rubik";
+    font-size: 24px;
+}
+#product .product-container .card p{
+    font-size: 20px;
+    display: block;
+    margin: 0;
+}
+#product .product-container .card h4{
+    padding: 10px 30px;
+    background-color: rgb(31, 17, 2);
+    color: rgb(250, 237, 220);
+    align-self: baseline;
+    margin: 0;
+}
+#product .product-container .card img{
+    border-radius: 10px;
+    border: solid 3px rgb(31, 17, 2);
+}
+
+#contact{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: burlywood;
+    color: rgb(31, 17, 2);
+    padding: 20px 30px;
+    border-radius: 15px;
+    gap: 10px;
+    
+}
+#contact *{
+    margin: 0;
+}
+#contact form label{
+    font-size: 20px;
+    align-self: baseline;
+    font-weight: 500;
+}
+#contact form input{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(250, 237, 220, 1);
+}
+#contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(250, 237, 220, 1);
+    height: 100px;
+}
+#contact form button{
+    background-color: rgb(31, 17, 2);
+    color: rgb(250, 237, 220);
+    width: 100%;
+    border-radius: 0;
+}
+
+}
+
+@media (max-width: 768px){
+        nav{
+        padding: 0 20px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    nav .navbar{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        height: 50vh;
+        background-color: rgb(250, 237, 220, 1);
+        transition: all 0.7s;
+        padding: 80px;
+        box-sizing: border-box;
+        border-bottom: solid 10px rgb(31, 17, 2);
+    }
+    nav .navbar ul{
+        margin-left: -40px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar ul li a{
+        color: rgb(31, 17, 2);
+        font-size: 28px;
+    }
+    nav .hamburger-menu{
+        display: flex;
+        z-index: 999;
+
+    }
+    nav .hamburger-menu i{
+        color: burlywood;
+
+    }
+    nav .hamburger-menu i#nav-open{
+        display: flex;
+        transition: all 0.7s;
+    }
+    nav .hamburger-menu i#nav-close{
+        display: none;
+        font-size: 30px;
+        color:rgb(31, 17, 2);
+        transition: all 0.7s;
+    }
+    nav .hamburger-menu i#nav-open.hidden{
+    display: none;
+    }
+        nav .navbar.navbar-down{
+            top: 0;
+            transition: all 0.7s;
+        }
+    nav .hamburger-menu i#nav-close.show{
+        display: flex;
+        transition: all 0.7s;
+
+    } 
+
+    #product{
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 1024px){
+    main #home{
+        background-image: url(public/ipad-kopi.jpeg);
+    }
+    main .tittle h1{
+        width: 40%;
+        line-height: 50px;
+    }
+    main .tittle p{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1280px){
+    main .tittle h1{
+        width: 40%;
+        
+    }
+}
